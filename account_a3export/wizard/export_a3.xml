@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2017 Comunitea
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record id="export_a3_wizard_view" model="ir.ui.view">
+        <field name="name">Export a3</field>
+        <field name="model">export.a3.wizard</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <footer>
+                    <button name="export" string="Export" type="object" class="oe_highlight"/>
+                    or
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window name="Export a3"
+        res_model="export.a3.wizard"
+        view_id="export_a3_wizard_view"
+        view_mode="form"
+        target="new"
+        id="export_a3_wizard_action"/>
+
+    <!-- quitar de configuracion -->
+    <menuitem id="export_a3_wizard_menu" name="Export a3" string="Export a3"
+              action="export_a3_wizard_action" parent="account.menu_finance_configuration"/>
+
+</odoo>

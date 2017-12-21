@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2017 Comunitea
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record id="a3_exportation_view_tree" model="ir.ui.view">
+        <field name="name">a3.exportation.tree</field>
+        <field name="model">a3.exportation</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="a3_exportation_view_form" model="ir.ui.view">
+        <field name="name">a3.exportation.form</field>
+        <field name="model">a3.exportation</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="create_file" type="object" string="Export file" class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="file_name" invisible="1"/>
+                        <field name="exported_file" filename="file_name" readonly="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Partners">
+                            <field name="partners" readonly="1"/>
+                        </page>
+                        <page string="Invoices">
+                            <field name="invoices" readonly="1"/>
+                        </page>
+                        <page string="Moves">
+                            <field name="moves" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="a3_exportation_view_search" model="ir.ui.view">
+        <field name="name">a3.exportation.search</field>
+        <field name="model">a3.exportation</field>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <search>
+               <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="a3_exportation_action" model="ir.actions.act_window">
+        <field name="name">A3 log</field>
+        <field name="res_model">a3.exportation</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="a3_exportation_view_tree"/>
+        <field name="search_view_id" ref="a3_exportation_view_search"/>
+    </record>
+
+    <!-- quitar de configuracion -->
+    <menuitem name="A3 log" parent="account.menu_finance_configuration" action="a3_exportation_action" id="a3_exportation_menu"/>
+</odoo>

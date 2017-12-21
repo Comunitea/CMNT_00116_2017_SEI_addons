@@ -1,0 +1,208 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * account_a3export
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-21 17:39+0000\n"
+"PO-Revision-Date: 2017-12-21 19:05+0100\n"
+"Last-Translator: Jesús Ventosinos Mayor <jesus@comunitea.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_res_partner_a3_account
+#: model:ir.model.fields,field_description:account_a3export.field_res_users_a3_account
+msgid "A3 Account"
+msgstr "A3 Account"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_account_fiscal_position_a3_code
+msgid "A3 Code"
+msgstr "Código A3"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_account_invoice_a3_sync
+#: model:ir.model.fields,field_description:account_a3export.field_account_move_a3_sync
+#: model:ir.model.fields,field_description:account_a3export.field_res_partner_a3_sync
+#: model:ir.model.fields,field_description:account_a3export.field_res_users_a3_sync
+msgid "A3 Sync"
+msgstr "A3 Sync"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_res_partner_a3_vat
+#: model:ir.model.fields,field_description:account_a3export.field_res_users_a3_vat
+msgid "A3 Vat"
+msgstr "A3 Vat"
+
+#. module: account_a3export
+#: model:ir.actions.act_window,name:account_a3export.a3_exportation_action
+#: model:ir.ui.menu,name:account_a3export.a3_exportation_menu
+msgid "A3 log"
+msgstr "Log A3"
+
+#. module: account_a3export
+#: model:ir.model,name:account_a3export.model_account_move
+msgid "Account Entry"
+msgstr "Asiento Contable"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_account_move_line_amount
+msgid "Amount"
+msgstr "Monto"
+
+#. module: account_a3export
+#: model:ir.ui.view,arch_db:account_a3export.export_a3_wizard_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account_a3export
+#: model:ir.model,name:account_a3export.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_create_uid
+#: model:ir.model.fields,field_description:account_a3export.field_export_a3_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_create_date
+#: model:ir.model.fields,field_description:account_a3export.field_export_a3_wizard_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_name
+msgid "Date"
+msgstr "Fecha"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_display_name
+#: model:ir.model.fields,field_description:account_a3export.field_export_a3_wizard_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_account_invoice_dua_document_number
+msgid "Dua Document Number"
+msgstr "Número de documento DUA"
+
+#. module: account_a3export
+#: model:ir.ui.view,arch_db:account_a3export.export_a3_wizard_view
+msgid "Export"
+msgstr "Exportar"
+
+#. module: account_a3export
+#: model:ir.actions.act_window,name:account_a3export.export_a3_wizard_action
+#: model:ir.ui.menu,name:account_a3export.export_a3_wizard_menu
+msgid "Export a3"
+msgstr "Exportar A3"
+
+#. module: account_a3export
+#: model:ir.ui.view,arch_db:account_a3export.a3_exportation_view_form
+msgid "Export file"
+msgstr "Exportar fichero"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_exported_file
+msgid "Exported File"
+msgstr "Fichero exportado"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_file_name
+msgid "File Name"
+msgstr "Nombre del archivo"
+
+#. module: account_a3export
+#: model:ir.model,name:account_a3export.model_account_fiscal_position
+msgid "Fiscal Position"
+msgstr "Posición fiscal"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_id
+#: model:ir.model.fields,field_description:account_a3export.field_export_a3_wizard_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: account_a3export
+#: model:ir.model,name:account_a3export.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: account_a3export
+#: model:ir.model,name:account_a3export.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Linea de Factura"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_invoices
+#: model:ir.ui.view,arch_db:account_a3export.a3_exportation_view_form
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: account_a3export
+#: model:ir.model,name:account_a3export.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation___last_update
+#: model:ir.model.fields,field_description:account_a3export.field_export_a3_wizard___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_write_uid
+#: model:ir.model.fields,field_description:account_a3export.field_export_a3_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_write_date
+#: model:ir.model.fields,field_description:account_a3export.field_export_a3_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_account_move_line_line_type
+msgid "Line Type"
+msgstr "Line Type"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_moves
+#: model:ir.ui.view,arch_db:account_a3export.a3_exportation_view_form
+msgid "Moves"
+msgstr "Asientos"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_account_invoice_operation_date
+msgid "Operation Date"
+msgstr "Operation Date"
+
+#. module: account_a3export
+#: model:ir.model.fields,field_description:account_a3export.field_a3_exportation_partners
+#: model:ir.ui.view,arch_db:account_a3export.a3_exportation_view_form
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: account_a3export
+#: model:ir.model,name:account_a3export.model_a3_exportation
+msgid "a3.exportation"
+msgstr "a3.exportation"
+
+#. module: account_a3export
+#: model:ir.model,name:account_a3export.model_export_a3_wizard
+msgid "export.a3.wizard"
+msgstr "export.a3.wizard"
+
+#. module: account_a3export
+#: model:ir.ui.view,arch_db:account_a3export.export_a3_wizard_view
+msgid "or"
+msgstr "o"

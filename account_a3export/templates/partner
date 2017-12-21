@@ -1,0 +1,2 @@
+{% for partner in partners %}5{{ partner.ref|r(5) }}{{partner.create_date and partner.create_date|a3_date|l(8)}}C{{partner.a3_account|l(12)}}{{partner.name|l(30)}}N+0000000000.00     {{partner.a3_vat|l(14)}}CL{{(partner.street or '') + (partner.street2 or '')|l(30)}}           {{partner.city|l(20)}}{{partner.zip|l(5)}}{{partner.state_id.name|l(15)}}{{' '|l(3)}}{{(partner.phone or partner.mobile)|l(12)}}                {{partner.email|l(30)}}     {{' '|l(12)}}{{partner.country_id.code|l(2)}}{{' '|l(254)}}EN
+{% endfor %}
