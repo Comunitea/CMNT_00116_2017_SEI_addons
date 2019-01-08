@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-seistag_harbour,seistag_harbour,seistag_harbour,base.group_user,1,1,1,1
+seistag_harbour,seistag_harbour,model_seistag_harbour,base.group_user,1,1,1,1
