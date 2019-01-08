@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="harbour_tree" model="ir.ui.view">
+        <field name="name">harbour.view.tree</field>
+        <field name="model">seistag.harbour</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="harbour_view_search" model="ir.ui.view">
+        <field name="name">harbour.view.search</field>
+        <field name="model">seistag.harbour</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="seistag_harbour_action" model="ir.actions.act_window">
+        <field name="name">Harbours</field>
+        <field name="res_model">seistag.harbour</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="harbour_tree"/>
+        <field name="Harbours" ref="harbour_view_search"/>
+    </record>
+
+    <menuitem name="Harbours" parent="sale.menu_sale_config" action="seistag_harbour_action" id="seistag_harbour_menu"/>
+</odoo>

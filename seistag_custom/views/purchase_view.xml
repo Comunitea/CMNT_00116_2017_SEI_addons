@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 Comunitea
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="purchase_order_view_form_seistag_" model="ir.ui.view">
+        <field name="name">purchase.order.form.seistag</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <field name="origin" position="attributes">
+               <attribute name="attrs">{'invisible': False}</attribute>
+            </field>
+            <field name="company_id" position="after">
+               <field name="booking"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
