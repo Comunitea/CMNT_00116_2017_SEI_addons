@@ -13,6 +13,8 @@
     'installable': True,
     'depends': [
         'base',
+        'sale',
+        'purchase'
     ],
     'data': [
         'views/harbour.xml',

@@ -1,2 +1,0 @@
-{% for move in moves %}{% for line in move.line_ids %}5{{line.partner_id.ref|r(5)}}{{move.date|a3_date|l(8)}}0{{line.partner_id._get_customer_account(line.account_id)|l(12)}}{{line.account_id.name|l(30)}}{{line.line_type|l(1)}}{{move.name|l(10)}}{{line==move.line_ids[0] and 'I' or line==move.line_ids[-1] and 'U' or 'M'}}{{line.name|l(30)}}{{line.amount|a3_float}}{{' '|l(137)}}  {{' '|l(256)}}EN
-{% endfor %}{% endfor %}
