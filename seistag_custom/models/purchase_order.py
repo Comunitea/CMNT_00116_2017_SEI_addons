@@ -8,3 +8,4 @@ class PurchaseOrder(models.Model):
     _inherit = 'purchase.order'
 
     booking = fields.Char(string='Booking')
+    harbour_id = fields.Many2one('seistag.harbour', string='Harbour')
