@@ -20,6 +20,7 @@
         'views/harbour.xml',
         'views/sale_view.xml',
         'views/purchase_view.xml',
+        'views/account_move_view.xml',
         'security/ir.model.access.csv'
     ],
 }
