@@ -9,6 +9,7 @@
         <field name="arch" type="xml">
             <field name="pricelist_id" position="after">
                <field name="harbour_id"/>
+               <field name="unit_type_id"/>
             </field>
         </field>
     </record>

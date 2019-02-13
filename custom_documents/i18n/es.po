@@ -1,0 +1,204 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* custom_documents
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-13 15:03+0000\n"
+"PO-Revision-Date: 2019-02-13 15:03+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "&amp;bull;"
+msgstr "&amp;bull;"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "&amp;nbsp;<span>on</span>&amp;nbsp;"
+msgstr "&amp;nbsp;<span>en</span>&amp;nbsp;"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<span style=\"border-bottom: 1px solid black\">Signed for and on behalf of Buyer</span>"
+msgstr "<span style=\"border-bottom: 1px solid black\">Signed for and on behalf of Buyer</span>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong><u>BANK DETAILS</u></strong>"
+msgstr "<strong><u>BANK DETAILS</u></strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Address</strong>"
+msgstr "<strong>Address</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>BANK ADRESS:</strong>"
+msgstr "<strong>BANK ADRESS:</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Customer</strong>"
+msgstr "<strong>Cliente</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>IBAN:</strong>"
+msgstr "<strong>IBAN:</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Mode/Unit type</strong>"
+msgstr "<strong>Mode/Unit type</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>NAME OF THE BANK:</strong>"
+msgstr "<strong>NAME OF THE BANK:</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Payment terms</strong>"
+msgstr "<strong>Payment terms</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Ship To</strong>"
+msgstr "<strong>Ship To</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Shipment Terms</strong>"
+msgstr "<strong>Shipment Terms</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Subtotal: </strong>"
+msgstr "<strong>Subtotal: </strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Tel.</strong>"
+msgstr "<strong>Tel.</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Tin No.</strong>"
+msgstr "<strong>Tin No.</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "Amount"
+msgstr "Importe"
+
+#. module: custom_documents
+#: model:ir.model,name:custom_documents.model_res_bank
+msgid "Bank"
+msgstr "Banco"
+
+#. module: custom_documents
+#: model:ir.model,name:custom_documents.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "Date"
+msgstr "Fecha"
+
+#. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_sale_order_date_order_date
+msgid "Date Order Date"
+msgstr "Date Order Date"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "Description"
+msgstr "Descripción"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "Disc.(%)"
+msgstr "Desc.(%)"
+
+#. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_res_bank_document_address
+#: model:ir.model.fields,field_description:custom_documents.field_res_partner_document_address
+#: model:ir.model.fields,field_description:custom_documents.field_res_users_document_address
+msgid "Document Address"
+msgstr "Document Address"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "Email:"
+msgstr "Correo electrónico:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "Invoice details:<br/>"
+msgstr "Invoice details:<br/>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Página: <span class=\"page\"/>/<span class=\"topage\"/>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "Proforma No"
+msgstr "Proforma No"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: custom_documents
+#: model:ir.model,name:custom_documents.model_sale_order
+msgid "Quotation"
+msgstr "Presupuesto"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "Total Price"
+msgstr "Precio total"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "Web:"
+msgstr "Red:"
+

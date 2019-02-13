@@ -10,6 +10,7 @@
         'sale',
         'sale_stock',
         'operating_unit',
+        'seistag_custom'
     ],
     'data': [
         'views/report_templates.xml',

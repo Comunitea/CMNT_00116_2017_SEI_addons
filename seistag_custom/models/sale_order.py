@@ -4,8 +4,16 @@
 from odoo import models, fields, api, _
 
 
+class SaleOrderUnitType(models.Model):
+
+    _name = 'sale.order.unit.type'
+
+    name = fields.Char(required=True)
+
+
 class SaleOrder(models.Model):
 
     _inherit = 'sale.order'
 
     harbour_id = fields.Many2one('seistag.harbour', string='Harbour')
+    unit_type_id = fields.Many2one('sale.order.unit.type', 'Unit types')
