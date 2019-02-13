@@ -8,7 +8,8 @@
     'license': 'AGPL-3',
     'depends': [
         'sale',
-        'sale_stock'
+        'sale_stock',
+        'operating_unit',
     ],
     'data': [
         'views/report_templates.xml',
