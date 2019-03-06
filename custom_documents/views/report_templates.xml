@@ -42,6 +42,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-4 pull-right" t-if="o._name == 'account.invoice'">
+                        <div style="border: 1px solid black">
+                            <div class="row">
+                                <div class="col-xs-6"><strong>Invoice No</strong></div>
+                                <div class="col-xs-6"><strong><span t-field="o.sequence_number_next_prefix"/><span t-field="o.sequence_number_next"/></strong></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6"><strong>Date</strong></div>
+                                <div class="col-xs-6"><strong><span t-field="o.date_invoice"/></strong></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </xpath>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 Comunitea
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="account_invoice_report_custom" model="ir.ui.view">
+        <field name="name">acount.invoice.report.custom</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='other_info']" position="after">
+                <page string="Report" name="report">
+                    <group>
+
+                        <field name="incoterm"/>
+                        <field name="port_destination"/>
+                        <field name="unit_type_id"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="report_invoice_v2_document">
+            <t t-call="web.external_layout">
+                <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})" />
+                <div class="page">
+                    <br/>
+                <div style="border: 1px solid black;">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <strong>Customer</strong>
+                        </div>
+                        <div class="col-xs-10">
+                            <span t-field="o.partner_id"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <strong>Address</strong>
+                        </div>
+                        <div class="col-xs-10">
+                            <span t-field="o.partner_id.document_address"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <strong>Tel.</strong>
+                        </div>
+                        <div class="col-xs-10">
+                            <span t-field="o.partner_id.phone"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <strong>VAT</strong>
+                        </div>
+                        <div class="col-xs-10">
+                            <span t-field="o.partner_id.vat"/>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="row">
+                        <div class="col-xs-4 col-xs-offset-8">
+                            <strong>Payment terms</strong>
+                            <span t-field="o.incoterm"/>
+                        </div>
+                        <div class="col-xs-4 col-xs-offset-8">
+                            <strong>Port destination</strong>
+                            <span t-field="o.port_destination"/>
+                        </div>
+                        <div class="col-xs-4 col-xs-offset-8">
+                            <strong>Unit types</strong>
+                            <span t-field="o.unit_type_id"/>
+                        </div>
+                </div>
+<!--
+                PAYMENT DETAILS
+-->
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <strong>Payment Terms</strong>
+                            <span t-field="o.payment_mode_id"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 ">
+                            <strong>Bank details</strong>
+                            <span t-field="o.partner_bank_id.bank_id"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 ">
+                            <strong>Bank Address</strong>
+                            <span t-field="o.partner_bank_id.bank_id.street"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 ">
+                            <strong>IBAN</strong>
+                            <span t-field="o.partner_bank_id"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 ">
+                            <strong>SWIFT</strong>
+                            <span t-field="o.partner_bank_id.bank_id.bic"/>
+                        </div>
+                    </div>
+
+                <br/> <br/>
+
+            <t t-set="display_discount" t-value="any([l.discount for l in o.invoice_line_ids])"/>
+            <style>
+                .borderless td, .borderless th {
+                    border: none !important;
+                }
+            </style>
+            <t t-foreach="o.order_lines_layouted()" t-as="page">
+                <table class="table table-condensed borderless" style="border: 1px solid black">
+                    <thead>
+                        <tr style="border: 1px solid black">
+                            <th>Description</th>
+                            <th class="text-right">Quantity</th>
+                            <th class="text-right">Unit Price</th>
+                            <th t-if="display_discount" class="text-right" groups="sale.group_discount_per_so_line">Disc.(%)</th>
+                            <th class="text-right" groups="sale.group_show_price_subtotal">Amount</th>
+                            <th class="text-right price_tax_included" groups="sale.group_show_price_total">Total Price</th>
+                        </tr>
+                   </thead>
+                   <tbody class="order_tbody">
+                        <t t-foreach="page" t-as="layout_category">
+
+                            <t t-if="layout_category_size > 1 or page_size > 1" groups="sale.group_sale_layout">
+                                <tr class="active">
+                                    <td colspan="7" style="font-weight: bold; border-bottom: 1px solid black;">&amp;bull;
+                                        <t t-esc="layout_category['name']"/>
+                                    </td>
+                                </tr>
+                            </t>
+
+                            <!-- Lines associated -->
+                            <t t-foreach="layout_category['lines']" t-as="l">
+                                <tr>
+                                    <td><span t-field="l.name"/></td>
+                                    <td class="text-right">
+                                        <span t-field="l.quantity"/>
+                                        <span t-field="l.price_unit" groups="product.group_uom"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.price_unit"/>
+                                    </td>
+                                    <td t-if="display_discount" class="text-right" groups="sale.group_discount_per_so_line">
+                                        <span t-field="l.discount"/>
+                                    </td>
+                                    <td class="text-right" groups="sale.group_show_price_subtotal">
+                                        <span t-field="l.price_subtotal"/>
+                                    </td>
+                                    <td class="text-right" groups="sale.group_show_price_total">
+                                        <span t-field="l.price_total"/>
+                                    </td>
+                                </tr>
+
+                            </t>
+
+
+                        </t>
+                    </tbody>
+                </table>
+
+                 <div class="clearfix">
+                <div class="row" name="total">
+                    <div class="col-xs-4 pull-right">
+                        <table class="table table-condensed" style="min-width: 200px;max-width: 350px;">
+                            <tr class="border-black" style="border-bottom:1px solid #dddddd;">
+                                <td><strong>Subtotal</strong></td>
+                                <td class="text-right">
+                                    <span t-field="o.amount_untaxed"
+                                        />
+                                </td>
+                            </tr>
+                            <t t-foreach="o._get_tax_amount_by_group()" t-as="amount_by_group">
+                                <tr style="border-bottom:1px solid #dddddd;">
+                                    <t t-if="amount_by_group[3] == 1 and o.amount_untaxed == amount_by_group[2]">
+                                        <td>
+                                            <span t-esc="amount_by_group[0]"/>
+                                            <span>&amp;nbsp;<span>on</span>&amp;nbsp;<t t-esc="amount_by_group[2]"/></span>
+                                        </td>
+                                        <td class="text-right">
+                                            <span t-esc="amount_by_group[1]"/>
+                                        </td>
+                                    </t>
+                                    <t t-else ="">
+                                        <td>
+                                            <span t-esc="amount_by_group[0]"/>
+                                        </td>
+                                        <td class="text-right">
+                                            <span t-esc="amount_by_group[1]"/>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </t>
+                            <tr class="border-black">
+                                <td><strong>Total</strong></td>
+                                <td class="text-right">
+                                    <span t-field="o.amount_total"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-0">
+                            <strong>CONDITIONS UNDER PRODUCT DESCRIPTION: </strong>
+                            <span t-field="o.comment"/>
+                        </div>
+
+                        <div class="col-xs-3">
+                            <img src="/custom_documents/static/src/img/FSC.jpg" style="max-height: 100px;"/>
+                            <img src="/custom_documents/static/src/img/PEFC.png" style="max-height: 100px; margin-left: 12px;"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+            </div>
+
+
+
+         </t>
+        </template>
+
+        <template id="report_invoice_v2">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="custom_documents.report_invoice_v2_document" t-lang="o.partner_id.lang"/>
+                </t>
+            </t>
+        </template>
+
+
+
+    </data>
+</odoo>

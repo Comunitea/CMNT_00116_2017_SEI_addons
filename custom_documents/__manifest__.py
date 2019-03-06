@@ -10,11 +10,15 @@
         'sale',
         'sale_stock',
         'operating_unit',
-        'seistag_custom'
+        'seistag_custom',
+        'account'
     ],
     'data': [
         'views/report_templates.xml',
         'views/report_sale_order.xml',
+        'views/report_invoice.xml',
+        'views/account_report.xml',
+        'views/account_invoice_view.xml',
         'data/report_paperformat.xml'
     ],
     'installable': True,
