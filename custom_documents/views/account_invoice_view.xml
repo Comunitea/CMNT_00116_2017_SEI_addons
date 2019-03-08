@@ -17,6 +17,10 @@
                     </group>
                 </page>
             </xpath>
+            <xpath expr="//field[@name='amount_untaxed']" position="after">
+                <field name="advance"/>
+                <field name="balance_outstanding"/>
+            </xpath>
         </field>
     </record>
 

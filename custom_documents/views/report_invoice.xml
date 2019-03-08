@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <template id="report_invoice_v2_document">
             <t t-call="web.external_layout">
                 <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})" />
@@ -44,7 +43,7 @@
 
                  <div class="row">
                         <div class="col-xs-4 col-xs-offset-8">
-                            <strong>Payment terms</strong>
+                            <strong>Shipment terms</strong>
                             <span t-field="o.incoterm"/>
                         </div>
                         <div class="col-xs-4 col-xs-offset-8">
@@ -57,7 +56,7 @@
                         </div>
                 </div>
 <!--
-                PAYMENT DETAILS
+                PAYMENT DETAI
 -->
 
                     <div class="row">
@@ -143,10 +142,7 @@
                                         <span t-field="l.price_total"/>
                                     </td>
                                 </tr>
-
                             </t>
-
-
                         </t>
                     </tbody>
                 </table>
@@ -194,19 +190,31 @@
                 </div>
             </div>
 
-                <div class="row">
-                    <div class="row">
-                        <div class="col-xs-8 col-xs-offset-0">
-                            <strong>CONDITIONS UNDER PRODUCT DESCRIPTION: </strong>
-                            <span t-field="o.comment"/>
-                        </div>
+            <div class="row" t-if="o.advance">
+                <div class="col-xs-4 col-xs-offset-8">
+                    Advance
+                    <span t-field="o.advance"/>
+                </div>
+                <div class="col-xs-4 col-xs-offset-8">
+                    Balance outstanding
+                    <span t-field="o.balance_outstanding"/>
+                </div>
+            </div>
 
-                        <div class="col-xs-3">
-                            <img src="/custom_documents/static/src/img/FSC.jpg" style="max-height: 100px;"/>
-                            <img src="/custom_documents/static/src/img/PEFC.png" style="max-height: 100px; margin-left: 12px;"/>
-                        </div>
+            <br/> <br/>
+            <div class="row">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-0"><H6>
+                        <strong>CONDITIONS UNDER PRODUCT DESCRIPTION: </strong></H6>
+                        <H6><span t-field="o.comment"/></H6>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <img src="/custom_documents/static/src/img/FSC.jpg" style="max-height: 100px;"/>
+                        <img src="/custom_documents/static/src/img/PEFC.png" style="max-height: 100px; margin-left: 12px;"/>
                     </div>
                 </div>
+            </div>
             </t>
             </div>
 
