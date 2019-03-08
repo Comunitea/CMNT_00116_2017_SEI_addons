@@ -74,6 +74,14 @@
                     <div class="text-muted">
                         Page: <span class="page"/> / <span class="topage"/>
                     </div>
+                    <div><p style="font-size:10px;">
+                    De acuerdo con lo establecido por la Ley Orgánica 15/1999 de 13 de diciembre, de Protección de Datos de Carácter Personal
+                    (LOPD), le informamos que sus datos están incorporados en un fichero del que es titular SEISTAG
+                    INNOVACIÓN SL con la finalidad de realizar la gestión administrativa, contable y fiscal, así como enviarle
+                    comunicaciones comerciales sobre nuestros productos y/o servicios.
+                     Asimismo, le informamos de la posibilidad de ejercer los derechos de acceso, rectificación, cancelación y oposición
+                    de sus datos en el domicilio de SEISTAG INNOVACIÓN SL, sito en C/RUEIRO, 17-BAJO - BERTAMIRÁNS - 15220 - AMES -
+                    A CORUÑA o la dirección de email: info@seistag.com</p></div>
                 </div>
             </div>
         </xpath>

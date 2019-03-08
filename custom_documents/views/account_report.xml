@@ -9,7 +9,7 @@
         <report
             id="account_invoices_v2"
             model="account.invoice"
-            string="Invoice custom"
+            string="Trading Invoices"
             report_type="qweb-pdf"
             name="custom_documents.report_invoice_v2"
             file="custom_documents.report_invoice_v2"
