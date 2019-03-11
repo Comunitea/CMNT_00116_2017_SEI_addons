@@ -17,6 +17,8 @@
         'views/report_templates.xml',
         'views/report_sale_order.xml',
         'views/report_invoice.xml',
+        'views/report_invoice_atlantico.xml',
+        'views/report_invoice_talendis.xml',
         'views/account_report.xml',
         'views/account_invoice_view.xml',
         'data/report_paperformat.xml'
