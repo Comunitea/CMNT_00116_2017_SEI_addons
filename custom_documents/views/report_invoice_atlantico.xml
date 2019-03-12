@@ -8,7 +8,7 @@
 <!--CABECERA-->
             <div class="header ">
                 <div class="row">
-                    <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" style="max-height: 45px;" class="pull-left"/>
+                    <img class="img" src="/custom_documents/static/src/img/logoATL.jpg" style="max-height: 65px;" />
                 </div>
                 <div class="row" style="border: 1px solid black;">
                     <div>
@@ -21,7 +21,7 @@
 
                         </div>
                         <div class="col-xs-4">
-                            <strong>VAT: </strong><span t-field="o.company_id.vat"/>
+                            <strong>NIF:: </strong><span t-field="o.company_id.vat"/>
                         </div>
                         <div class="col-xs-4">
                             <span t-field="o.company_id.email"/>
@@ -34,7 +34,7 @@
             <div class="page">
                 <br/>
                  <div class="row">
-                        <div class="col-xs-6">Datos del cliente:</div>
+                        <div class="col-xs-6">Client data:</div>
                 </div>
                 <div style="border: 1px solid black;">
                     <div class="row">
@@ -46,7 +46,7 @@
                         </div>
 
                         <div class="col-xs-4">
-                                <strong>Factura Nº: </strong>
+                                <strong>Invoice Nº: </strong>
                                 <span t-field="o.number"/>
                         </div>
                     </div>
@@ -58,13 +58,13 @@
                             <span t-field="o.partner_id.document_address"/>
                         </div>
                         <div class="col-xs-4">
-                                <strong>Fecha de factura:: </strong>
+                                <strong>Date invoice:: </strong>
                                 <span t-field="o.date_invoice"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-2">
-                            <strong>VAT</strong>
+                            <strong>NIF:</strong>
                         </div>
                         <div class="col-xs-10">
                             <span t-field="o.partner_id.vat"/>
@@ -73,7 +73,7 @@
                 </div>
                 <br/>
                 <div class="row">
-                        <div class="col-xs-6">Concepto e importe de la factura:</div>
+                        <div class="col-xs-6">Concept and amount of the invoice:</div>
                 </div>
 <!--TABLA FACTURA-->
                 <t t-set="display_discount" t-value="any([l.discount for l in o.invoice_line_ids])"/>
@@ -111,7 +111,6 @@
                                         <td><span t-field="l.name"/></td>
                                         <td class="text-right">
                                             <span t-field="l.quantity"/>
-                                            <span t-field="l.price_unit" groups="product.group_uom"/>
                                         </td>
                                         <td class="text-right">
                                             <span t-field="l.price_unit"/>
@@ -173,6 +172,10 @@
                         </div>
                     </div>
                 </t>
+                <div class="row">
+                        <div class="col-xs-6">Method of payment: <span t-field="o.payment_mode_id"/></div>
+                        <div class="col-xs-6">Payments term: <span t-field="o.payment_term_id"/></div>
+                </div>
             </div>
 <!--PIE-->
             <div class="footer">

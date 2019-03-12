@@ -19,6 +19,7 @@
         'views/report_invoice.xml',
         'views/report_invoice_atlantico.xml',
         'views/report_invoice_talendis.xml',
+        'views/report_invoice_PACKAGINGDIGITAL.xml',
         'views/account_report.xml',
         'views/account_invoice_view.xml',
         'data/report_paperformat.xml'

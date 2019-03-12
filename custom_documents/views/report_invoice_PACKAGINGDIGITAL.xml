@@ -2,14 +2,14 @@
 <odoo>
     <data>
 
-        <template id="report_invoice_talendis_document">
+        <template id="report_invoice_PACKAGINGDIGITAL_document">
 
         <div class="article o_report_layout_standard">
 <!--CABECERA-->
             <div class="header">
                 <div class="text-center">
                     <div class="text-center">
-                        <img class="img" src="/custom_documents/static/src/img/talendis.jpg" style="max-height: 120px;" />
+                        <img class="img" src="/custom_documents/static/src/img/logo_PACKAGINGDIGITAL_linea.png" style="max-height: 100px;" />
                     </div>
                     <div class="row">
                         <div>
@@ -162,10 +162,10 @@
 
         </template>
 
-        <template id="report_invoice_talendis">
+        <template id="report_invoice_PACKAGINGDIGITAL">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
-                    <t t-call="custom_documents.report_invoice_talendis_document" t-lang="o.partner_id.lang"/>
+                    <t t-call="custom_documents.report_invoice_PACKAGINGDIGITAL_document" t-lang="o.partner_id.lang"/>
                 </t>
             </t>
         </template>
