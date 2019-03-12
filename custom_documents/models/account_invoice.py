@@ -4,6 +4,14 @@
 from odoo import models, fields, api
 
 
+class StockIncoterms(models.Model):
+    _inherit = "stock.incoterms"
+
+    @api.multi
+    def name_get(self):
+        return [(record.id, "(%s) %s" % (record.code, record.name)) for record in self]
+
+
 class AccountInvoice(models.Model):
     _inherit = "account.invoice"
 
@@ -14,6 +22,7 @@ class AccountInvoice(models.Model):
     incoterm = fields.Many2one(
         'stock.incoterms', 'Shipment Terms',
         help="International Commercial Terms are a series of predefined commercial terms used in international transactions.")
+
     port_destination=fields.Text(string= "Port destination")
     unit_type_id = fields.Many2one('sale.order.unit.type', 'Unit types')
 

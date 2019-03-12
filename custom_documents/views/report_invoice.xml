@@ -44,7 +44,7 @@
                  <div class="row">
                         <div class="col-xs-4 col-xs-offset-8">
                             <strong>Shipment terms</strong>
-                            <span t-field="o.incoterm"/>
+                            <span t-field="o.incoterm.code"/>
                         </div>
                         <div class="col-xs-4 col-xs-offset-8">
                             <strong>Port destination</strong>
@@ -62,7 +62,7 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <strong>Payment Terms</strong>
-                            <span t-field="o.payment_mode_id"/>
+                            <span t-field="o.payment_term_id"/>
                         </div>
                     </div>
                     <div class="row">
@@ -127,7 +127,6 @@
                                     <td><span t-field="l.name"/></td>
                                     <td class="text-right">
                                         <span t-field="l.quantity"/>
-                                        <span t-field="l.price_unit" groups="product.group_uom"/>
                                     </td>
                                     <td class="text-right">
                                         <span t-field="l.price_unit"/>
