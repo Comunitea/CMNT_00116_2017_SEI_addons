@@ -21,7 +21,7 @@
 
                         </div>
                         <div class="col-xs-4">
-                            <strong>NIF:: </strong><span t-field="o.company_id.vat"/>
+                            <strong>CIF:: </strong><span t-field="o.company_id.vat"/>
                         </div>
                         <div class="col-xs-4">
                             <span t-field="o.company_id.email"/>
@@ -34,31 +34,31 @@
             <div class="page">
                 <br/>
                  <div class="row">
-                        <div class="col-xs-6">Client data:</div>
+                        <div class="col-xs-6">Datos del cliente:</div>
                 </div>
                 <div style="border: 1px solid black;">
                     <div class="row">
                         <div class="col-xs-2">
-                            <strong>Customer</strong>
+                            <strong>Cliente</strong>
                         </div>
                         <div class="col-xs-6">
                             <span t-field="o.partner_id"/>
                         </div>
 
                         <div class="col-xs-4">
-                                <strong>Invoice Nº: </strong>
+                                <strong>Nº Factura: </strong>
                                 <span t-field="o.number"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-2">
-                            <strong>Address</strong>
+                            <strong>Dirección</strong>
                         </div>
                         <div class="col-xs-6">
                             <span t-field="o.partner_id.document_address"/>
                         </div>
                         <div class="col-xs-4">
-                                <strong>Date invoice:: </strong>
+                                <strong>Fecha factura:: </strong>
                                 <span t-field="o.date_invoice"/>
                         </div>
                     </div>
@@ -70,10 +70,16 @@
                             <span t-field="o.partner_id.vat"/>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-xs-6 ">
+                            <strong>IBAN:</strong>
+                            <span t-field="o.partner_bank_id"/>
+                        </div>
+                    </div>
                 </div>
                 <br/>
                 <div class="row">
-                        <div class="col-xs-6">Concept and amount of the invoice:</div>
+                        <div class="col-xs-6">Concepto e importe de la factura:</div>
                 </div>
 <!--TABLA FACTURA-->
                 <t t-set="display_discount" t-value="any([l.discount for l in o.invoice_line_ids])"/>
@@ -86,12 +92,12 @@
                     <table class="table table-condensed borderless" style="border: 1px solid black">
                         <thead>
                             <tr style="border: 1px solid black">
-                                <th>Description</th>
-                                <th class="text-right">Quantity</th>
-                                <th class="text-right">Unit Price</th>
-                                <th t-if="display_discount" class="text-right" groups="sale.group_discount_per_so_line">Disc.(%)</th>
-                                <th class="text-right" groups="sale.group_show_price_subtotal">Amount</th>
-                                <th class="text-right price_tax_included" groups="sale.group_show_price_total">Total Price</th>
+                                <th>Descripción</th>
+                                <th class="text-right">Cantidad</th>
+                                <th class="text-right">Precio unidad</th>
+                                <th t-if="display_discount" class="text-right" groups="sale.group_discount_per_so_line">Desc.(%)</th>
+                                <th class="text-right" groups="sale.group_show_price_subtotal">Total</th>
+                                <th class="text-right price_tax_included" groups="sale.group_show_price_total">Precio total</th>
                             </tr>
                        </thead>
                        <tbody class="order_tbody">
@@ -173,15 +179,15 @@
                     </div>
                 </t>
                 <div class="row">
-                        <div class="col-xs-6">Method of payment: <span t-field="o.payment_mode_id"/></div>
-                        <div class="col-xs-6">Payments term: <span t-field="o.payment_term_id"/></div>
+                        <div class="col-xs-6">Método de pago: <span t-field="o.payment_mode_id"/></div>
+                        <div class="col-xs-6">Términos de pago: <span t-field="o.payment_term_id"/></div>
                 </div>
             </div>
 <!--PIE-->
             <div class="footer">
                     <div class="text-center" style="border-top: 1px solid black;">
                         <div class="text-muted">
-                            Page: <span class="page"/> / <span class="topage"/>
+                            Pag: <span class="page"/> / <span class="topage"/>
                         </div>
                     </div>
             </div>
