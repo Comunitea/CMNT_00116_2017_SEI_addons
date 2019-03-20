@@ -29,4 +29,5 @@ class AccountInvoice(models.Model):
 
     @api.depends('advance','balance_outstanding')
     def _calculate_balance_outstanding(self):
-        self.balance_outstanding=self.amount_untaxed - self.advance
+        for inv in self:
+            inv.balance_outstanding = inv.amount_untaxed - inv.advance
