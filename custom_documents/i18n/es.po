@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* custom_documents
+#       * custom_documents
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-13 15:03+0000\n"
-"PO-Revision-Date: 2019-02-13 15:03+0000\n"
+"POT-Creation-Date: 2019-03-20 17:20+0000\n"
+"PO-Revision-Date: 2019-03-20 17:20+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,11 +17,21 @@ msgstr ""
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "&amp;bull;"
 msgstr "&amp;bull;"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "&amp;nbsp;<span>on</span>&amp;nbsp;"
 msgstr "&amp;nbsp;<span>en</span>&amp;nbsp;"
 
@@ -37,6 +47,7 @@ msgstr "<strong><u>BANK DETAILS</u></strong>"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "<strong>Address</strong>"
 msgstr "<strong>Address</strong>"
 
@@ -46,14 +57,103 @@ msgid "<strong>BANK ADRESS:</strong>"
 msgstr "<strong>BANK ADRESS:</strong>"
 
 #. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>BASE IMPONIBLE</strong>"
+msgstr "<strong>BASE IMPONIBLE</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>Bank Address</strong>"
+msgstr "<strong>Bank Address</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>Bank details</strong>"
+msgstr "<strong>Bank details</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "<strong>CIF:: </strong>"
+msgstr "<strong>CIF:: </strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>CLIENTE</strong>"
+msgstr "<strong>CLIENTE</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>CONCEPTO</strong>"
+msgstr "<strong>CONCEPTO</strong>"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
-msgid "<strong>Customer</strong>"
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>CONDITIONS UNDER PRODUCT DESCRIPTION: </strong>"
+msgstr "<strong>CONDITIONS UNDER PRODUCT DESCRIPTION: </strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "<strong>Cliente</strong>"
 msgstr "<strong>Cliente</strong>"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>Customer</strong>"
+msgstr "<strong>Cliente</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "<strong>Date</strong>"
+msgstr "<strong>Fecha</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "<strong>Dirección</strong>"
+msgstr "<strong>Dirección</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>FECHA</strong>"
+msgstr "<strong>FECHA</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "<strong>Fecha factura:: </strong>"
+msgstr "<strong>Fecha factura:: </strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
 msgid "<strong>IBAN:</strong>"
 msgstr "<strong>IBAN:</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>IBAN</strong>"
+msgstr "<strong>IBAN</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>IVA</strong>"
+msgstr "<strong>IVA</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "<strong>Invoice No</strong>"
+msgstr "<strong>Invoice No</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>MODO DE PAGO</strong>"
+msgstr "<strong>MODO DE PAGO</strong>"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
@@ -66,9 +166,40 @@ msgid "<strong>NAME OF THE BANK:</strong>"
 msgstr "<strong>NAME OF THE BANK:</strong>"
 
 #. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "<strong>NIF:</strong>"
+msgstr "<strong>NIF:</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "<strong>Nº Factura: </strong>"
+msgstr "<strong>Nº Factura: </strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>NÚMERO FACTURA</strong>"
+msgstr "<strong>NÚMERO FACTURA</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>Payment Terms</strong>"
+msgstr "<strong>Payment Terms</strong>"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
 msgid "<strong>Payment terms</strong>"
 msgstr "<strong>Payment terms</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>Port destination</strong>"
+msgstr "<strong>Port destination</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>SWIFT</strong>"
+msgstr "<strong>SWIFT</strong>"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
@@ -81,17 +212,45 @@ msgid "<strong>Shipment Terms</strong>"
 msgstr "<strong>Shipment Terms</strong>"
 
 #. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>Shipment terms</strong>"
+msgstr "<strong>Shipment terms</strong>"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
 msgid "<strong>Subtotal: </strong>"
 msgstr "<strong>Subtotal: </strong>"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "<strong>Subtotal</strong>"
 msgstr "<strong>Subtotal</strong>"
 
 #. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>TERMINOS DE PAGO</strong>"
+msgstr "<strong>TERMINOS DE PAGO</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>TOTAL FACTURA</strong>"
+msgstr "<strong>TOTAL FACTURA</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "<strong>TRANSFERENCIA</strong>"
+msgstr "<strong>TRANSFERENCIA</strong>"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "<strong>Tel.</strong>"
 msgstr "<strong>Tel.</strong>"
 
@@ -102,18 +261,82 @@ msgstr "<strong>Tin No.</strong>"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "<strong>Total</strong>"
 msgstr "<strong>Total</strong>"
 
 #. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>Unit types</strong>"
+msgstr "<strong>Unit types</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "<strong>VAT</strong>"
+msgstr "<strong>VAT</strong>"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+msgid "ADVICE: The information in this email as in the attachments is confidential and for exclusive use of the target user group. Access to this message is disallowed to any other than the addressee. If you are not the addressee or you have been included by mistake, any use relative to the information is forbidden and might be illegal."
+msgstr "ADVICE: The information in this email as in the attachments is confidential and for exclusive use of the target user group. Access to this message is disallowed to any other than the addressee. If you are not the addressee or you have been included by mistake, any use relative to the information is forbidden and might be illegal."
+
+#. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_account_invoice_advance
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "Advance"
+msgstr "Anticipo"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "Amount"
 msgstr "Importe"
+
+#. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_account_invoice_balance_outstanding
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
+msgid "Balance outstanding"
+msgstr "Balance outstanding"
 
 #. module: custom_documents
 #: model:ir.model,name:custom_documents.model_res_bank
 msgid "Bank"
 msgstr "Banco"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "CIF"
+msgstr "CIF"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "CLIENTE:"
+msgstr "CLIENTE:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "Cantidad"
+msgstr "Cantidad"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "Concepto"
+msgstr "Concepto"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "Concepto e importe de la factura:"
+msgstr "Concepto e importe de la factura:"
 
 #. module: custom_documents
 #: model:ir.model,name:custom_documents.model_res_partner
@@ -131,12 +354,57 @@ msgid "Date Order Date"
 msgstr "Date Order Date"
 
 #. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "Datos del cliente:"
+msgstr "Datos del cliente:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "De acuerdo con lo establecido por la Ley Orgánica 15/1999 de 13 de diciembre,\n"
+"                        de Protección de Datos de Carácter Personal (LOPD), le informamos que sus datos están incorporados en un fichero del\n"
+"                        que es titular SEISTAG INNOVACIÓN SL con la finalidad de realizar la gestión administrativa, contable y fiscal, así\n"
+"                        como enviarle comunicaciones comerciales sobre nuestros productos y/o servicios.\n"
+"                        Asimismo, le informamos de la posibilidad de ejercer los derechos de acceso, rectificación, cancelación y oposición de\n"
+"                        sus datos en el domicilio de SEISTAG INNOVACIÓN SL, sito en C/RUEIRO, 17-BAJO - BERTAMIRÁNS - 15220 - AMES - A CORUÑA o\n"
+"                        la dirección de email: info@seistag.com"
+msgstr "De acuerdo con lo establecido por la Ley Orgánica 15/1999 de 13 de diciembre,\n"
+"                        de Protección de Datos de Carácter Personal (LOPD), le informamos que sus datos están incorporados en un fichero del\n"
+"                        que es titular SEISTAG INNOVACIÓN SL con la finalidad de realizar la gestión administrativa, contable y fiscal, así\n"
+"                        como enviarle comunicaciones comerciales sobre nuestros productos y/o servicios.\n"
+"                        Asimismo, le informamos de la posibilidad de ejercer los derechos de acceso, rectificación, cancelación y oposición de\n"
+"                        sus datos en el domicilio de SEISTAG INNOVACIÓN SL, sito en C/RUEIRO, 17-BAJO - BERTAMIRÁNS - 15220 - AMES - A CORUÑA o\n"
+"                        la dirección de email: info@seistag.com"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "Desc.(%)"
+msgstr "Desc.(%)"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "Descripcion"
+msgstr "Descripcion"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "Descripción"
+msgstr "Descripción"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "Description"
 msgstr "Descripción"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "Disc.(%)"
 msgstr "Desc.(%)"
 
@@ -153,12 +421,108 @@ msgid "Email:"
 msgstr "Correo electrónico:"
 
 #. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "FACTURA:"
+msgstr "FACTURA:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "FECHA DE FACTURA:"
+msgstr "FECHA DE FACTURA:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "FORMA DE PAGO:"
+msgstr "FORMA DE PAGO:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "IBAN:"
+msgstr "IBAN:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "Importe"
+msgstr "Importe"
+
+#. module: custom_documents
+#: model:ir.model,name:custom_documents.model_stock_incoterms
+msgid "Incoterms"
+msgstr "Incoterms"
+
+#. module: custom_documents
+#: model:ir.model.fields,help:custom_documents.field_account_invoice_incoterm
+msgid "International Commercial Terms are a series of predefined commercial terms used in international transactions."
+msgstr "Los términos de comercio internacional son una serie de condiciones comerciales usadas en las transacciones internacionales."
+
+#. module: custom_documents
+#: model:ir.model,name:custom_documents.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: custom_documents
+#: model:ir.actions.report,name:custom_documents.account_invoice_atlantico
+msgid "Invoice Atlantico"
+msgstr "Invoice Atlantico"
+
+#. module: custom_documents
+#: model:ir.actions.report,name:custom_documents.account_invoice_packaging_digital
+msgid "Invoice Packaging digital"
+msgstr "Invoice Packaging digital"
+
+#. module: custom_documents
+#: model:ir.actions.report,name:custom_documents.account_invoice_seistag_con_logos
+msgid "Invoice Seistag con logos"
+msgstr "Invoice Seistag con logos"
+
+#. module: custom_documents
+#: model:ir.actions.report,name:custom_documents.account_invoice_seistag_sin_logos
+msgid "Invoice Seistag sin logos"
+msgstr "Invoice Seistag sin logos"
+
+#. module: custom_documents
+#: model:ir.actions.report,name:custom_documents.account_invoice_talendis
+msgid "Invoice Talendis"
+msgstr "Invoice Talendis"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
 msgid "Invoice details:<br/>"
 msgstr "Invoice details:<br/>"
 
 #. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_product_product_length
+#: model:ir.model.fields,field_description:custom_documents.field_product_template_length
+msgid "Length"
+msgstr "Longitud"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "Método de pago:"
+msgstr "Método de pago:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+msgid "NIF:"
+msgstr "NIF:"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "Pag: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Pag: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
 msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
 msgstr "Página: <span class=\"page\"/>/<span class=\"topage\"/>"
 
@@ -168,12 +532,39 @@ msgid "Phone:"
 msgstr "Teléfono:"
 
 #. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_account_invoice_port_destination
+msgid "Port destination"
+msgstr "Port destination"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "Precio total"
+msgstr "Precio total"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "Precio unidad"
+msgstr "Precio unidad"
+
+#. module: custom_documents
+#: model:ir.model,name:custom_documents.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
 msgid "Proforma No"
 msgstr "Proforma No"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "Quantity"
 msgstr "Cantidad"
 
@@ -183,22 +574,81 @@ msgid "Quotation"
 msgstr "Presupuesto"
 
 #. module: custom_documents
-#: model:ir.ui.view,arch_db:custom_documents.custom_proforma
-msgid "Taxes"
-msgstr "Impuestos"
+#: model:ir.ui.view,arch_db:custom_documents.account_invoice_report_custom
+msgid "Report"
+msgstr "Informe"
+
+#. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_account_invoice_incoterm
+msgid "Shipment Terms"
+msgstr "Shipment Terms"
+
+#. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_product_product_thick
+#: model:ir.model.fields,field_description:custom_documents.field_product_template_thick
+msgid "Thick"
+msgstr "Grueso"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_con_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_seistag_sin_logos_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "Total"
+msgstr "Total"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "Total Price"
 msgstr "Precio total"
 
 #. module: custom_documents
+#: model:ir.actions.report,name:custom_documents.account_invoices_v2
+msgid "Trading Invoices"
+msgstr "Trading Invoices"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_atlantico_document
+msgid "Términos de pago:"
+msgstr "Términos de pago:"
+
+#. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.custom_proforma
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_v2_document
 msgid "Unit Price"
 msgstr "Precio unitario"
+
+#. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_account_invoice_unit_type_id
+msgid "Unit types"
+msgstr "Tipos de unidades"
 
 #. module: custom_documents
 #: model:ir.ui.view,arch_db:custom_documents.external_layout_standard_custom
 msgid "Web:"
 msgstr "Red:"
 
+#. module: custom_documents
+#: model:ir.model.fields,field_description:custom_documents.field_product_product_width
+#: model:ir.model.fields,field_description:custom_documents.field_product_template_width
+msgid "Width"
+msgstr "Ancho"
+
+#. module: custom_documents
+#: model:ir.model,name:custom_documents.model_account
+msgid "account"
+msgstr "account"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "dirección"
+msgstr "dirección"
+
+#. module: custom_documents
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_PACKAGINGDIGITAL_document
+#: model:ir.ui.view,arch_db:custom_documents.report_invoice_talendis_document
+msgid "razón social"
+msgstr "razón social"

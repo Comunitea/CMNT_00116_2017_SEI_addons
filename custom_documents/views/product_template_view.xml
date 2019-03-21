@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="account_invoice_measurements" model="ir.ui.view">
+        <field name="name">product.template.measurements</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='responsible_id']" position="after">
+                <div>
+                    <group >
+                        <field name="length"/>
+                        <field name="width"/>
+                        <field name="thick"/>
+                    </group>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

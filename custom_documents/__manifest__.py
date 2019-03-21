@@ -24,6 +24,7 @@
         'views/report_invoice_seistag_sin_logos.xml',
         'views/account_report.xml',
         'views/account_invoice_view.xml',
+        'views/product_template_view.xml',
         'data/report_paperformat.xml'
     ],
     'installable': True,
